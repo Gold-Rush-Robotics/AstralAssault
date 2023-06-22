@@ -7,7 +7,8 @@ import pytest
     (2, -1, 1, 1),
     (-2, -1, 1, -1),
     (0, -4, -2, -2),
-    (2, 1, 5, 2)
+    (2, 1, 5, 2),
+    (.2, -1, 1, .2)
 ])
 def test_clamp_normal(test_value, test_min, test_max, expected):
     assert clamp_range(test_value, test_min, test_max) == expected
